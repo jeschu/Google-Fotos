@@ -4,7 +4,7 @@
       setBounds(window, browser)
       browser.setAutoResize( { width: true, height: true } )
       browser.webContents.userAgent = 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.10136'
-      browser.webContents.loadURL('https://calendar.google.com/')
+      browser.webContents.loadURL('https://photos.google.com/')
       browser.webContents.on("new-window", (event, url) => {
         try {
           require("electron").shell.openExternal(url);

@@ -10,7 +10,7 @@ if (!gotLock) {
     return
 }
 
-app.setAppUserModelId("info.maila.google-calendar")
+app.setAppUserModelId("info.maila.google-photos")
 app.on('second-instance', () => { windowProvider.getWindow().show() })
 app.on('ready', createWindow)
 app.on('activate', createWindow)
